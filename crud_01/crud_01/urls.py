@@ -16,5 +16,9 @@ Including another URLconf
 from django.urls import path
 from crudapp import views
 urlpatterns = [
-    path('', views.insert)
+    path('', views.insert),
+    path('show', views.show),
+    path('delete/<int:id>',views.delete),
+    path('edit/<int:id>',views.edit),
+    path('update/<int:id>',views.update),
 ]
